@@ -153,7 +153,7 @@ class NodeModel {
 
         if (flatNode.isChild) {
             if (checkModel === CheckModel.ALL) {
-                this.toggleNode(node.value, 'checked', this.isEveryChildChecked(flatNode));
+                this.toggleNode(node.value, 'checked', this.isAnyChildChecked(flatNode));
             }
 
             this.toggleParentStatus(flatNode.parent, checkModel);
@@ -164,6 +164,10 @@ class NodeModel {
 
     isEveryChildChecked(node) {
         return node.children.every(child => this.getNode(child.value).checked);
+    }
+
+    isAnyChildChecked(node) {
+        return node.children.some(child => this.getNode(child.value).checked);
     }
 
     toggleNode(nodeValue, key, toggleValue) {
