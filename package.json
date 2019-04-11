@@ -70,5 +70,8 @@
     "lodash": "^4.17.10",
     "nanoid": "^2.0.0",
     "prop-types": "^15.5.8"
+  },
+  "resolutions": {
+    "braces": "^3.0.0"
   }
 }
