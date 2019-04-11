@@ -72,6 +72,7 @@
     "prop-types": "^15.5.8"
   },
   "resolutions": {
-    "braces": "^3.0.0"
+    "braces": "^3.0.0",
+    "node-tar": "^4.4.2"
   }
 }
