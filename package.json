@@ -73,6 +73,6 @@
   },
   "resolutions": {
     "braces": "^3.0.0",
-    "node-tar": "^4.4.2"
+    "tar": "^4.4.2"
   }
 }
