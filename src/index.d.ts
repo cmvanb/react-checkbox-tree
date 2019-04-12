@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-declare module "react-checkbox-tree" {
+declare module "@cmvanb/react-checkbox-tree" {
     interface Node {
         label: React.ReactNode;
         value: string;
