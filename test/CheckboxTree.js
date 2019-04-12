@@ -83,7 +83,7 @@ describe('<CheckboxTree />', () => {
                 assert.deepEqual(['sol', 'mercury', 'jupiter', 'io', 'europa'], actual);
             });
 
-            it('should NOT percolate `checked` to the parent if not all leaves are checked', () => {
+            it('should percolate `checked` to the parent if some leaves are checked', () => {
                 let actual = null;
 
                 const wrapper = mount(
@@ -107,7 +107,7 @@ describe('<CheckboxTree />', () => {
                 );
 
                 wrapper.find('TreeNode[value="europa"] input[type="checkbox"]').simulate('click');
-                assert.deepEqual(['europa'], actual);
+                assert.deepEqual(['jupiter', 'europa'], actual);
             });
         });
 

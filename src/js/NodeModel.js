@@ -158,7 +158,7 @@ class NodeModel {
 
             this.toggleParentStatus(flatNode.parent, checkModel);
         } else {
-            this.toggleNode(node.value, 'checked', this.isEveryChildChecked(flatNode));
+            this.toggleNode(node.value, 'checked', this.isAnyChildChecked(flatNode));
         }
     }
 
